@@ -23,6 +23,13 @@ can then install it using pip:
 pip install timething
 ```
 
+redbeard's installation
+```bash
+apt update -yqq && apt install -y rustc cargo g++
+pip install timething==0.0.27
+pip install -U transformers
+```
+
 ## Aligning recordings and transcripts
 
 Timething currently expects to find a folder containing one or more chapters
@@ -54,6 +61,11 @@ You can now run Timething on your CPU or GPU, for example:
 
 ```bash
 timething align --metadata text.csv --alignments-dir aligned
+```
+
+redbeard's installation
+```bash
+timething align --metadata test.csv --alignments-dir aligned --batch-size 8 --n-workers 8 --language mandarin
 ```
 
 You can also specify more options, e.g.:
