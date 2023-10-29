@@ -69,3 +69,9 @@ arabic:
   pin: "204552cdcaec935142a7d409c194b541985a3808"
   sampling_rate: 16000
   language: "ar"
+
+mandarin:
+  model: "jonatasgrosman/wav2vec2-large-xlsr-53-chinese-zh-cn"
+  pin: "99ccb2737be22b8bb50dcfcc39ad4d567fb90cfd"
+  sampling_rate: 16000
+  language: "zh"
